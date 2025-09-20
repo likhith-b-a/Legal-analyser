@@ -38,7 +38,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     const { text, type, url } = request;
 
     // *** IMPORTANT: Replace with your actual FastAPI endpoint ***
-    const FASTAPI_ENDPOINT = "http://localhost:8000/"; // Assuming FastAPI runs on 8000
+    const FASTAPI_ENDPOINT = "https://plain-law.onrender.com"; // Assuming FastAPI runs on 8000
 
     fetch(FASTAPI_ENDPOINT, {
       method: "POST",
