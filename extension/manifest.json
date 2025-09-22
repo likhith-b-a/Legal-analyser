@@ -6,7 +6,7 @@
 
   "permissions": ["activeTab", "storage", "sidePanel", "tabs"],
 
-  "host_permissions": ["<all_urls>"],
+  "host_permissions": ["https://plain-law.onrender.com/*", "<all_urls>"],
 
   "background": {
     "service_worker": "background.js"
@@ -37,5 +37,9 @@
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
+  },
+
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
   }
 }
